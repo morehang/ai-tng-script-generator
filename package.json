@@ -8,4 +8,7 @@
   },
   "author": "Ralph Greschner <ralph.greschner@gmail.com> (http://www.ralph-greschner.de)",
   "license": "MIT",
-  "devDependen
+  "devDependencies": {
+    "lerna": "^3.17.0"
+  }
+}
