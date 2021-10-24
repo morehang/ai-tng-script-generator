@@ -4,4 +4,11 @@ import { ConfigModule } from './config/config.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { MongoConnectionService } from './shared/mongo-connection.service';
-import { ScriptGeneratorModule } from
+import { ScriptGeneratorModule } from './script-generator/script-generator.module';
+import { SharedModule } from './shared/shared.module';
+
+const staticRootPath = join(process.cwd(), 'public');
+
+@Module({
+  imports: [
+    AuthModul
