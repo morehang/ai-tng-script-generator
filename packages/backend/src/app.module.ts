@@ -11,4 +11,14 @@ const staticRootPath = join(process.cwd(), 'public');
 
 @Module({
   imports: [
-    AuthModul
+    AuthModule,
+    ConfigModule,
+    SharedModule,
+    ServeStaticModule.forRoot({
+      rootPath: staticRootPath,
+    }),
+    ScriptGeneratorModule,
+  ],
+  controllers: [],
+})
+export class AppModule implements OnModule
