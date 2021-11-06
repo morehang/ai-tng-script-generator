@@ -15,4 +15,13 @@ export class AuthService {
   constructor(private readonly configService: ConfigService) {}
 
   async validateOAuthLogin(
-    
+    thirdPartyId: string,
+    provider: Provider,
+  ): Promise<string> {
+    try {
+      // Use Google User Id as subject.
+      const payload = {
+        sub: thirdPartyId,
+        provider,
+      };
+      const
