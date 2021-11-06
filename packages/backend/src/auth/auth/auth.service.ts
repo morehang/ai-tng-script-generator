@@ -8,4 +8,11 @@ export enum Provider {
 }
 
 /**
- 
+ * Service providing authentication functionality.
+ */
+@Injectable()
+export class AuthService {
+  constructor(private readonly configService: ConfigService) {}
+
+  async validateOAuthLogin(
+    
