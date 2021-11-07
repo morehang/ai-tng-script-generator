@@ -24,4 +24,12 @@ export class AuthService {
         sub: thirdPartyId,
         provider,
       };
-      const
+      const jwtSecretKey = this.configService.get('JWT_SECRET_KEY');
+      const jwt: string = sign(
+        payload,
+        jwtSecretKey,
+        {
+          expiresIn: 3600 * 24 * 7,
+        },
+      );
+      r
