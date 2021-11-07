@@ -32,4 +32,9 @@ export class AuthService {
           expiresIn: 3600 * 24 * 7,
         },
       );
-      r
+      return jwt;
+    } catch (err) {
+      throw new InternalServerErrorException('validateOAuthLogin', err.message);
+    }
+  }
+}
