@@ -11,4 +11,11 @@ import { SharedModule } from '../shared/shared.module';
 
 @Module({
   imports: [ConfigModule, SharedModule],
-  controllers: [AuthController
+  controllers: [AuthController],
+  providers: [AuthService, UserRepository, GoogleStrategy, JwtStrategy],
+})
+export class AuthModule implements OnModuleInit {
+  onModuleInit() {
+    const useMockAuth = false;
+    if (useMockAuth) {
+      this.c
