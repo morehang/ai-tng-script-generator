@@ -5,4 +5,10 @@ import { GoogleStrategy } from './auth/google.strategy';
 import { JwtStrategy } from './auth/jwt.strategy';
 import { ConfigModule } from '../config/config.module';
 import { MockStrategy } from './mock.strategy';
-import
+import * as passport from 'passport';
+import { UserRepository } from './user.repository';
+import { SharedModule } from '../shared/shared.module';
+
+@Module({
+  imports: [ConfigModule, SharedModule],
+  controllers: [AuthController
