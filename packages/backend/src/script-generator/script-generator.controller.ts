@@ -9,4 +9,10 @@ import { ScriptRepository } from './script.repository';
 @Controller('script-generator')
 export class ScriptGeneratorController {
   constructor(
-    priva
+    private readonly scriptGenerator: ScriptGeneratorService,
+    private readonly scriptRepository: ScriptRepository,
+  ) {}
+
+  /**
+   * Generate new script.
+   * @param payload Payload from frontend containing payment inform
