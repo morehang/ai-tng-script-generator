@@ -21,4 +21,8 @@ export class ScriptGeneratorController {
   @UseGuards(AuthGuard('jwt'))
   public async generateNewScript(@Req() req, @Body() payload: any) {
     const stripePaymentId = payload.payment.stripe.id;
-    // PROD: In
+    // PROD: In production, you would perform some sort of
+    // processing like validation / persistence in DB
+    // using this payment token.
+    const userId = req.user.sub;
+    return await this.scriptGenerator.generateNewScrip
