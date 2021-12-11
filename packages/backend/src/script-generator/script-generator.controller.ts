@@ -15,4 +15,10 @@ export class ScriptGeneratorController {
 
   /**
    * Generate new script.
-   * @param payload Payload from frontend containing payment inform
+   * @param payload Payload from frontend containing payment information.
+   */
+  @Post()
+  @UseGuards(AuthGuard('jwt'))
+  public async generateNewScript(@Req() req, @Body() payload: any) {
+    const stripePaymentId = payload.payment.stripe.id;
+    // PROD: In
