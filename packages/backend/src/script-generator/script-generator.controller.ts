@@ -25,4 +25,13 @@ export class ScriptGeneratorController {
     // processing like validation / persistence in DB
     // using this payment token.
     const userId = req.user.sub;
-    return await this.scriptGenerator.generateNewScrip
+    return await this.scriptGenerator.generateNewScript(stripePaymentId, userId);
+  }
+
+  /**
+   * Get recently generated script.
+   */
+  @Get('recent')
+  @UseGuards(AuthGuard('jwt'))
+  public async getRecentlyGenerated(@Req() req) {
+    const userId = req.user.sub
