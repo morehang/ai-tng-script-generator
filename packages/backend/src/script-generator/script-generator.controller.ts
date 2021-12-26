@@ -53,3 +53,7 @@ export class ScriptGeneratorController {
    */
   @Get('script/:id')
   @UseGuards(AuthGuard('jwt'))
+  public async getScriptById(@Param('id') id: string) {
+    return await this.scriptRepository.findOneById(id);
+  }
+}
