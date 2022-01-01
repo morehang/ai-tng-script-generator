@@ -7,4 +7,12 @@ import { BaseMongoRepository } from '../shared/base-mongo.repository';
 @Injectable()
 export class ScriptRepository extends BaseMongoRepository {
   public get collection(): any {
-    return this._mongoConnectionService.db.collection('scr
+    return this._mongoConnectionService.db.collection('scripts');
+  }
+
+  /**
+   * Find one most recent generated script.
+   */
+  public async findOneRecentByUserId(userId: string) {
+    return await this.collection
+      .find({ userId, status: 'co
