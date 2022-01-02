@@ -26,4 +26,13 @@ export class ScriptRepository extends BaseMongoRepository {
    * @param userId User id.
    */
   public findAllByUserId(userId: string) {
-    return this.findAll({ 
+    return this.findAll({ userId });
+  }
+
+  public findAll(query: any) {
+    return this.collection
+      .aggregate([
+        { $match: query },
+        {
+          $addFields: {
+            startTimeDate: { $convert: { inp
