@@ -15,4 +15,15 @@ export class ScriptRepository extends BaseMongoRepository {
    */
   public async findOneRecentByUserId(userId: string) {
     return await this.collection
-      .find({ userId, status: 'co
+      .find({ userId, status: 'completed' })
+      .sort({ startTime: -1 })
+      .limit(1)
+      .next();
+  }
+
+  /**
+   * Find all scripts by user id.
+   * @param userId User id.
+   */
+  public findAllByUserId(userId: string) {
+    return this.findAll({ 
