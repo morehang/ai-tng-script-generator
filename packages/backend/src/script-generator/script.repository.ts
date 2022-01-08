@@ -43,4 +43,14 @@ export class ScriptRepository extends BaseMongoRepository {
             title: {
               $concat: [
                 'Script from ',
-                { $dateToString: {
+                { $dateToString: { date: '$startTimeDate' } },
+              ],
+            },
+          },
+        },
+        { $sort: { startTimeDate: -1 } },
+        { $project: { startTimeDate: false } },
+      ])
+      .toArray();
+  }
+}
