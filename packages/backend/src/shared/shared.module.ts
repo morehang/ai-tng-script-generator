@@ -13,4 +13,4 @@ import { MongoConnectionService } from './mongo-connection.service';
         MongoConnectionService
       ]
 })
-export class SharedModule
+export class SharedModule {}
