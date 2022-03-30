@@ -4,4 +4,17 @@ import { AuthWithJwtPageComponent } from './auth-with-jwt-page/auth-with-jwt-pag
 import { HomePageComponent } from './home-page/home-page.component';
 
 /**
- * SP
+ * SPA routing configuration.
+ */
+const routes: Routes = [
+  {
+    path: 'auth-with-jwt/:jwt',
+    component: AuthWithJwtPageComponent
+  },
+  {
+    path: '',
+    component: HomePageComponent
+  }
+];
+
+@NgModule({
