@@ -264,4 +264,16 @@
     }
   }
 
-  @media screen and (max-wi
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+  }
+</style>
+
+<!-- Toolbar -->
+<app-header></app-header>
+
+<div class="content" role="main">
+  <router-outlet>
