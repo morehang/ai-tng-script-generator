@@ -14,4 +14,11 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthInterceptor implements HttpInterc
+export class AuthInterceptor implements HttpInterceptor {
+  intercept(
+    req: HttpRequest<any>,
+    next: HttpHandler
+  ): Observable<HttpEvent<any>> {
+    // Get JWT from local storage.
+    const idToken = localStorage.getItem('id_token');
+ 
