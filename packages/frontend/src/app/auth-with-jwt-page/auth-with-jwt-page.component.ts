@@ -16,4 +16,10 @@ export class AuthWithJwtPageComponent implements OnInit {
   public isAuthenticated = false;
 
   async ngOnInit() {
-    const jwt: string = this.route.snapshot.par
+    const jwt: string = this.route.snapshot.paramMap.get('jwt');
+    this.isAuthenticated = jwt !== 'failed';
+    if (this.isAuthenticated) {
+      // Save reference on JWT.
+      localStorage.setItem('id_token', jwt);
+      // Navigate to home after delay.
+      awai
