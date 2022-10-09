@@ -22,4 +22,8 @@ export class AuthWithJwtPageComponent implements OnInit {
       // Save reference on JWT.
       localStorage.setItem('id_token', jwt);
       // Navigate to home after delay.
-      awai
+      await delay(5000);
+      this.router.navigate(['/']);
+    }
+  }
+}
