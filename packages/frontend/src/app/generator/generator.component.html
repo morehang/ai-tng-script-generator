@@ -20,4 +20,13 @@
     </button>
     <button
       class="btn btn-primary btn-large"
-      (click)="lo
+      (click)="loadRecentlyGenerated()"
+      [disabled]="isDisabled"
+    >
+      Load Recent
+    </button>
+  </div>
+  <span *ngIf="isGenerating" class="float-sm-right">
+    Generating...
+  </span>
+</div>
