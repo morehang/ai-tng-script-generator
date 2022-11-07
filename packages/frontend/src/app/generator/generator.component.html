@@ -10,4 +10,14 @@
   >{{ generationResult?.scriptText }}
 </textarea>
 <div>
-  <div class="btn-group" role="g
+  <div class="btn-group" role="group">
+    <button
+      class="btn btn-primary btn-large"
+      (click)="generate()"
+      [disabled]="isDisabled"
+    >
+      Generate
+    </button>
+    <button
+      class="btn btn-primary btn-large"
+      (click)="lo
