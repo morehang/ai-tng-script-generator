@@ -38,3 +38,30 @@ export class CheckoutWithStripeComponent {
         lineHeight: '40px',
         fontWeight: 300,
         fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+        fontSize: '18px',
+        '::placeholder': {
+          color: '#CFD7E0'
+        }
+      }
+    }
+  };
+
+  /**
+   * Options of Stripe Checkout Element.
+   */
+  public elementsOptions: ElementsOptions = {
+    locale: 'en'
+  };
+
+  /**
+   * Perform transaction of buying a
+   * script generation request.
+   */
+  public async buy() {
+    const result = await this.stripeService
+      .createToken(this.card.getCard(), {})
+      .pipe(take(1))
+      .toPromise();
+    this.activeModal.close(result);
+  }
+}
