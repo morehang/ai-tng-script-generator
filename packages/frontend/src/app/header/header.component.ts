@@ -12,4 +12,7 @@ export class HeaderComponent {
   constructor() {}
 
   /**
-   * Url used 
+   * Url used for authentication using Google OAuth.
+   */
+  public loginUrl = `${environment.apiBaseUrl}/auth/google`;
+}
