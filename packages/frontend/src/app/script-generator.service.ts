@@ -31,4 +31,13 @@ export class ScriptGeneratorService {
   }
 
   /**
-   * Get re
+   * Get recently generated script.
+   */
+  public getRecentlyGenerated() {
+    return this.http.get(`${this.baseUrl}/script-generator/recent`).toPromise();
+  }
+
+  /**
+   * Get generated script by id.
+   */
+  public ge
