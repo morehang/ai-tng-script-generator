@@ -20,4 +20,15 @@ export class ScriptGeneratorService {
    * Generate a new script.
    * @param stripePaymentResult Payment information from Stripe.
    */
-  public generateNewScript(stripePaymentResult
+  public generateNewScript(stripePaymentResult) {
+    return this.http
+      .post(`${this.baseUrl}/script-generator`, {
+        payment: {
+          stripe: stripePaymentResult.token
+        }
+      })
+      .toPromise();
+  }
+
+  /**
+   * Get re
