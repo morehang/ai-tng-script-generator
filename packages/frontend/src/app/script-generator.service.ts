@@ -40,4 +40,12 @@ export class ScriptGeneratorService {
   /**
    * Get generated script by id.
    */
-  public ge
+  public getScriptById(id: string) {
+    return this.http
+      .get(`${this.baseUrl}/script-generator/script/${id}`)
+      .toPromise();
+  }
+
+  /**
+   * Check authentication state using JWT.
+   *
