@@ -48,4 +48,12 @@ export class ScriptGeneratorService {
 
   /**
    * Check authentication state using JWT.
-   *
+   */
+  public async checkAuthenticated() {
+    try {
+      const result: any = await this.http
+        .get(`${this.baseUrl}/auth/check`)
+        .toPromise();
+      return result.isAuthenticated;
+    } catch (err) {
+      retu
