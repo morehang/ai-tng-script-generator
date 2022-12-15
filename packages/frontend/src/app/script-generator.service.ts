@@ -56,4 +56,7 @@ export class ScriptGeneratorService {
         .toPromise();
       return result.isAuthenticated;
     } catch (err) {
-      retu
+      return false;
+    }
+  }
+}
