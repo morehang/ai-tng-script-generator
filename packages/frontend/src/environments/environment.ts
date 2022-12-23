@@ -9,4 +9,10 @@ export const environment = {
    * This is a purely random wait time!
    * PROD: Replace/remove!
    */
-  scriptGene
+  scriptGeneratorWaitTime: 120000,
+  stripeKey: ''
+};
+
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.i
