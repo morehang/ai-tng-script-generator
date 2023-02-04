@@ -1,0 +1,9 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "array-type": false,
+    "arrow-parens": false,
+    "deprecation": {
+      "severity": "warning"
+    },
+    "component-class-suf
