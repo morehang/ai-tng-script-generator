@@ -39,4 +39,15 @@
           "static-field",
           "instance-field",
           "static-method",
-   
+          "instance-method"
+        ]
+      }
+    ],
+    "no-consecutive-blank-lines": false,
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
