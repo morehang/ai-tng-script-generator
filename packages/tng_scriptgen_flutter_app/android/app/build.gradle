@@ -1,2 +1,9 @@
 def localProperties = new Properties()
-def localPropertiesFile = roo
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getPr
