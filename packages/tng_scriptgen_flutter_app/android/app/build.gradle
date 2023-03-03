@@ -37,4 +37,10 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
-        versionName f
+        versionName flutterVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the rele
