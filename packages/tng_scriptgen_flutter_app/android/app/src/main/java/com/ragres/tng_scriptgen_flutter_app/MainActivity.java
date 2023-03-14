@@ -8,4 +8,6 @@ public class MainActivity extends FlutterActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    GeneratedPluginRegistrant.registerWith(thi
+    GeneratedPluginRegistrant.registerWith(this);
+  }
+}
