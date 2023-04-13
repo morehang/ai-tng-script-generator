@@ -64,4 +64,15 @@
       "size" : "20x20",
       "idiom" : "ipad",
       "filename" : "Icon-App-20x20@2x.png",
-      "scale
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "Icon-App-29x29@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filena
