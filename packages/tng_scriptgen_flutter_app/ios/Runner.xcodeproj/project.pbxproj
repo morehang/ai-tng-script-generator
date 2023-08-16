@@ -254,4 +254,9 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-/* End PBXVarian
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		249021D3217E4FDB00AE95B9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xccon
