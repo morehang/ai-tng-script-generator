@@ -17,3 +17,16 @@ abstract class Main {
   static Future<Main> create(
       ) async {
     return await g.Main$Injector.create();
+  }
+}
+
+void main() async {
+  var container = await Main.create();
+  runApp(container.app);
+}
+
+@provide
+class MyApp extends StatelessWidget {
+
+  final ScriptGeneratorApiClient _scriptGeneratorApiClient;
+  final Script
