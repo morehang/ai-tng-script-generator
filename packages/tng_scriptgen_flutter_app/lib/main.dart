@@ -29,4 +29,9 @@ void main() async {
 class MyApp extends StatelessWidget {
 
   final ScriptGeneratorApiClient _scriptGeneratorApiClient;
-  final Script
+  final ScriptSyncService _scriptSyncService;
+  final ScriptRepository _scriptRepository;
+
+
+  MyApp(this._scriptRepository, this._scriptSyncService, this._scriptGeneratorApiClient) {
+    this._scriptRepository.initialize();
