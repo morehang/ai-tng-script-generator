@@ -56,4 +56,7 @@ class MyApp extends StatelessWidget {
       ),
       home: LoginPage(_scriptGeneratorApiClient),
       routes: <String, WidgetBuilder>{
-       
+        // Set named routes
+        '/login': (BuildContext context) => LoginPage(_scriptGeneratorApiClient),
+        '/home': (BuildContext context) => HomePage(),
+        '/generate': (BuildContext context) => GeneratePage
