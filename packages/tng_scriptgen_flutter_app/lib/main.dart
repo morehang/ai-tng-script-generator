@@ -59,4 +59,6 @@ class MyApp extends StatelessWidget {
         // Set named routes
         '/login': (BuildContext context) => LoginPage(_scriptGeneratorApiClient),
         '/home': (BuildContext context) => HomePage(),
-        '/generate': (BuildContext context) => GeneratePage
+        '/generate': (BuildContext context) => GeneratePage(_scriptGeneratorApiClient),
+        '/script-list': (BuildContext context) => ScriptListPage(this._scriptRepository, this._scriptSyncService),
+        '/script': (BuildContext context) => ShowScriptPage(this._scriptR
