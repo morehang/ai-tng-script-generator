@@ -61,4 +61,17 @@ class MyApp extends StatelessWidget {
         '/home': (BuildContext context) => HomePage(),
         '/generate': (BuildContext context) => GeneratePage(_scriptGeneratorApiClient),
         '/script-list': (BuildContext context) => ScriptListPage(this._scriptRepository, this._scriptSyncService),
-        '/script': (BuildContext context) => ShowScriptPage(this._scriptR
+        '/script': (BuildContext context) => ShowScriptPage(this._scriptRepository),
+      },
+    );
+  }
+}
+
+/*
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+
+  void _incrementCounter() async {
+    debugPrint('\n\n 🍎 🍎 🍎  setting remote MongoDB Stitch App ID ....');
+  
