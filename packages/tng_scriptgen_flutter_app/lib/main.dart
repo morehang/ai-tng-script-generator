@@ -74,4 +74,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() async {
     debugPrint('\n\n 🍎 🍎 🍎  setting remote MongoDB Stitch App ID ....');
-  
+    /*
+    var res = await MongodbMobile.setAppID({
+      'appID': 'tng-scriptgen-ymoql',
+      'type': MongodbMobile.ATLAS_DATABASE,
+    });
+    var carrier = Carrier(db: 'tng-script-gen', collection: 'scripts
