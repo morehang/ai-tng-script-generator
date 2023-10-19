@@ -79,4 +79,9 @@ class _MyHomePageState extends State<MyHomePage> {
       'appID': 'tng-scriptgen-ymoql',
       'type': MongodbMobile.ATLAS_DATABASE,
     });
-    var carrier = Carrier(db: 'tng-script-gen', collection: 'scripts
+    var carrier = Carrier(db: 'tng-script-gen', collection: 'scripts');
+    var syncResult = await MongodbMobile.sync(carrier);
+    Future.delayed(const Duration(milliseconds: 2000), () async
+    {
+      final documents = await MongodbMobile.getAll(carrier);
+      for (var documen
