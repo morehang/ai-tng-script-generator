@@ -90,4 +90,10 @@ class _MyHomePageState extends State<MyHomePage> {
     });
     */
     final apiClient = new ScriptGeneratorApiClient();
-    final result = await apiC
+    final result = await apiClient.generateNewScript();
+    final result2 = await apiClient.getScriptsByMe();
+    debugPrint('\n\n 🍎 🍎 🍎  setting remote MongoDB Stitch App ID ....');
+  }
+
+  @override
+  Widget build(BuildContext 
