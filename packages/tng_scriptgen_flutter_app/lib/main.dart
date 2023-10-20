@@ -84,4 +84,10 @@ class _MyHomePageState extends State<MyHomePage> {
     Future.delayed(const Duration(milliseconds: 2000), () async
     {
       final documents = await MongodbMobile.getAll(carrier);
-      for (var documen
+      for (var document in documents) {
+        developer.log('document: ' + json.encode(document));
+      }
+    });
+    */
+    final apiClient = new ScriptGeneratorApiClient();
+    final result = await apiC
