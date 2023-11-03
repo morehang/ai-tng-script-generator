@@ -143,4 +143,9 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
-      ), // This trailing c
+      ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+ */
