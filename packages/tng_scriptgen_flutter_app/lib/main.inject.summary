@@ -10,4 +10,10 @@
             "kind": "getter",
             "injectedType": {
               "lookupKey": {
-                "root": "asset:tn
+                "root": "asset:tng_scriptgen_flutter_app/lib/main.dart#MyApp",
+                "qualifier": null
+              },
+              "isProvider": false
+            },
+            "singleton": false,
+            "asynchronous": false,
