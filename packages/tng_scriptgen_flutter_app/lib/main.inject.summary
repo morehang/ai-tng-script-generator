@@ -29,3 +29,8 @@
         "name": "MyApp",
         "constructor": {
           "name": "",
+          "kind": "constructor",
+          "injectedType": {
+            "lookupKey": {
+              "root": "asset:tng_scriptgen_flutter_app/lib/main.dart#MyApp",
+              "qualifier": nu
