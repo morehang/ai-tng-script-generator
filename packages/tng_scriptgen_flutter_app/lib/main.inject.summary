@@ -17,3 +17,15 @@
             },
             "singleton": false,
             "asynchronous": false,
+            "dependencies": []
+          }
+        ],
+        "modules": []
+      }
+    ],
+    "module": [],
+    "injectable": [
+      {
+        "name": "MyApp",
+        "constructor": {
+          "name": "",
