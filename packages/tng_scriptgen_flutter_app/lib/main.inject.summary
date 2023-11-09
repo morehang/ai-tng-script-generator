@@ -46,4 +46,8 @@
                 "qualifier": null
               },
               "isProvider": false
- 
+            },
+            {
+              "lookupKey": {
+                "root": "asset:tng_scriptgen_flutter_app/lib/services/script_sync_service.dart#ScriptSyncService",
+                "qual
