@@ -7,4 +7,10 @@ import 'package:tng_scriptgen_flutter_app/services/script_generator_api_client.d
 
 @provide
 class GeneratePage extends StatefulWidget {
-  ScriptGeneratorApiCl
+  ScriptGeneratorApiClient _scriptGeneratorApiClient;
+
+  GeneratePage(this._scriptGeneratorApiClient);
+
+  @override
+  State<StatefulWidget> createState() {
+    return GeneratePageState(_scriptGeneratorApiClient
