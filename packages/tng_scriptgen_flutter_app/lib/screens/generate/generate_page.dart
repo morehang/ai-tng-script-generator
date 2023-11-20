@@ -13,4 +13,13 @@ class GeneratePage extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    return GeneratePageState(_scriptGeneratorApiClient
+    return GeneratePageState(_scriptGeneratorApiClient);
+  }
+}
+
+class GeneratePageState extends State<GeneratePage> {
+  String cardNumber = '';
+  String expiryDate = '';
+  String cardHolderName = '';
+  String cvvCode = '';
+  bool isCvvFocused = fals
