@@ -22,4 +22,12 @@ class GeneratePageState extends State<GeneratePage> {
   String expiryDate = '';
   String cardHolderName = '';
   String cvvCode = '';
-  bool isCvvFocused = fals
+  bool isCvvFocused = false;
+  bool canContinue = false;
+
+  ScriptGeneratorApiClient _scriptGeneratorApiClient;
+
+  GeneratePageState(this._scriptGeneratorApiClient);
+
+  @override
+  Widget build(BuildContext con
