@@ -47,4 +47,10 @@ class GeneratePageState extends State<GeneratePage> {
                   style: TextStyle(
                     fontSize: 12.0,
                   ),
-                  textAlign: TextAlign.cent
+                  textAlign: TextAlign.center),
+              CreditCardWidget(
+                cardNumber: cardNumber,
+                expiryDate: expiryDate,
+                cardHolderName: cardHolderName,
+                cvvCode: cvvCode,
+                showBackView: isCvvF
