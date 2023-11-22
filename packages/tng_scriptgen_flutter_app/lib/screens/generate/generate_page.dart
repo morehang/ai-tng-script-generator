@@ -41,4 +41,10 @@ class GeneratePageState extends State<GeneratePage> {
                   style: TextStyle(
                     fontSize: 12.0,
                   ),
-                  textAlign: TextAlign.center
+                  textAlign: TextAlign.center),
+              Text(
+                  'NO ACTUAL CHARGE IS TAKING PLACE.',
+                  style: TextStyle(
+                    fontSize: 12.0,
+                  ),
+                  textAlign: TextAlign.cent
