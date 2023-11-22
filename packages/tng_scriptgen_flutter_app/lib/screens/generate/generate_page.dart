@@ -37,4 +37,8 @@ class GeneratePageState extends State<GeneratePage> {
           child: Column(
             children: <Widget>[
               Text(
-                  'For debugging purposes, enter the credit card num
+                  'For debugging purposes, enter the credit card number 5555 5555 5555 4444 and any validity date plus postal code.',
+                  style: TextStyle(
+                    fontSize: 12.0,
+                  ),
+                  textAlign: TextAlign.center
