@@ -30,4 +30,11 @@ class GeneratePageState extends State<GeneratePage> {
   GeneratePageState(this._scriptGeneratorApiClient);
 
   @override
-  Widget build(BuildContext con
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(title: Text('Scripts')),
+        body: SafeArea(
+          child: Column(
+            children: <Widget>[
+              Text(
+                  'For debugging purposes, enter the credit card num
