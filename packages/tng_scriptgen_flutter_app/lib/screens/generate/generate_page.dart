@@ -58,4 +58,11 @@ class GeneratePageState extends State<GeneratePage> {
               Expanded(
                 child: SingleChildScrollView(
                   child: CreditCardForm(
-                    onCreditCardModelChange: onCredit
+                    onCreditCardModelChange: onCreditCardModelChange,
+                  ),
+                ),
+              ),
+              Builder(
+                builder: (context) => RaisedButton(
+                  onPressed: !canContinue
+               
