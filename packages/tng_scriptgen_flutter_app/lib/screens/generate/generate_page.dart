@@ -53,4 +53,9 @@ class GeneratePageState extends State<GeneratePage> {
                 expiryDate: expiryDate,
                 cardHolderName: cardHolderName,
                 cvvCode: cvvCode,
-                showBackView: isCvvF
+                showBackView: isCvvFocused,
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: CreditCardForm(
+                    onCreditCardModelChange: onCredit
