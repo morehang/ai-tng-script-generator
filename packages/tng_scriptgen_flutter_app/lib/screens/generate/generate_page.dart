@@ -65,4 +65,9 @@ class GeneratePageState extends State<GeneratePage> {
               Builder(
                 builder: (context) => RaisedButton(
                   onPressed: !canContinue
-               
+                      ? null
+                      : () async {
+                          await _scriptGeneratorApiClient.generateNewScript();
+                          setState(() {
+                            final scaffold = Scaffold.of(context);
+         
