@@ -70,4 +70,7 @@ class GeneratePageState extends State<GeneratePage> {
                           await _scriptGeneratorApiClient.generateNewScript();
                           setState(() {
                             final scaffold = Scaffold.of(context);
-         
+                            scaffold.showSnackBar(SnackBar(
+                              content: const Text(
+                                  'Started new script generation, please sync list in a few minutes!'),
+   
