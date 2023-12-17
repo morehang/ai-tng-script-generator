@@ -73,4 +73,8 @@ class GeneratePageState extends State<GeneratePage> {
                             scaffold.showSnackBar(SnackBar(
                               content: const Text(
                                   'Started new script generation, please sync list in a few minutes!'),
-   
+                            ));
+                          });
+                          await Future.delayed(
+                              const Duration(milliseconds: 2000));
+                          Navigator.of(context).pushNamed(
