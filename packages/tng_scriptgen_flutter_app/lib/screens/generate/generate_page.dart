@@ -77,4 +77,9 @@ class GeneratePageState extends State<GeneratePage> {
                           });
                           await Future.delayed(
                               const Duration(milliseconds: 2000));
-                          Navigator.of(context).pushNamed(
+                          Navigator.of(context).pushNamed('/home');
+                        },
+                  padding: EdgeInsets.all(12),
+                  color: Colors.lightBlueAccent,
+                  child:
+                      Text('Generate', style: TextStyle(color: Colors.white)),
