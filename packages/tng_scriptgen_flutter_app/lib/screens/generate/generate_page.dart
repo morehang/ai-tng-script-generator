@@ -83,3 +83,13 @@ class GeneratePageState extends State<GeneratePage> {
                   color: Colors.lightBlueAccent,
                   child:
                       Text('Generate', style: TextStyle(color: Colors.white)),
+                ),
+              ),
+            ],
+          ),
+        ));
+  }
+
+  void onCreditCardModelChange(CreditCardModel creditCardModel) {
+    setState(() {
+      cardNumber = creditCardModel.cardNumber;
