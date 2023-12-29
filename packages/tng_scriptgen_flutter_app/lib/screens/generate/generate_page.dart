@@ -96,4 +96,8 @@ class GeneratePageState extends State<GeneratePage> {
       expiryDate = creditCardModel.expiryDate;
       cardHolderName = creditCardModel.cardHolderName;
       cvvCode = creditCardModel.cvvCode;
-      isCvvFocused = creditCardModel.isCvvFo
+      isCvvFocused = creditCardModel.isCvvFocused;
+      canContinue = cardNumber != '' && expiryDate != '' && cvvCode != '';
+    });
+  }
+}
