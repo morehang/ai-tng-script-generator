@@ -15,3 +15,10 @@
               "qualifier": null
             },
             "isProvider": false
+          },
+          "singleton": false,
+          "asynchronous": false,
+          "dependencies": [
+            {
+              "lookupKey": {
+                "root": "asset:tng_scriptgen_flutt
