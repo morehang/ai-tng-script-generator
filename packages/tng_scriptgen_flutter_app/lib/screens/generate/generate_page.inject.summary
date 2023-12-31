@@ -10,4 +10,8 @@
           "name": "",
           "kind": "constructor",
           "injectedType": {
-   
+            "lookupKey": {
+              "root": "asset:tng_scriptgen_flutter_app/lib/screens/generate/generate_page.dart#GeneratePage",
+              "qualifier": null
+            },
+            "isProvider": false
