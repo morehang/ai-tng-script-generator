@@ -1,3 +1,13 @@
 {
   "asset": "asset:tng_scriptgen_flutter_app/lib/screens/generate/generate_page.dart",
-  "summary":
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": [
+      {
+        "name": "GeneratePage",
+        "constructor": {
+          "name": "",
+          "kind": "constructor",
+          "injectedType": {
+   
