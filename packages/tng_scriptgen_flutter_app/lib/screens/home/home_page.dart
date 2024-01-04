@@ -9,4 +9,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBa
+      appBar: AppBar(
+        title: Text("Home Page"),
+      ),
+      body: Container(
+        padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 2.0),
+        child: GridView.count(
+          cros
