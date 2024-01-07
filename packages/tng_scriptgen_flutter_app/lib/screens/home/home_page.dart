@@ -19,4 +19,12 @@ class HomePage extends StatelessWidget {
           padding: EdgeInsets.all(3.0),
           children: <Widget>[
             makeDashboardItem("Script List", Icons.book, () {
-              Navigator.of(context).pushN
+              Navigator.of(context).pushNamed('/script-list');
+            }),
+            makeDashboardItem("Generate", Icons.book, () {
+              Navigator.of(context).pushNamed('/generate');
+            }),
+          ],
+        ),
+      ),
+    
