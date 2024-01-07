@@ -15,4 +15,8 @@ class HomePage extends StatelessWidget {
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 2.0),
         child: GridView.count(
-          cros
+          crossAxisCount: 2,
+          padding: EdgeInsets.all(3.0),
+          children: <Widget>[
+            makeDashboardItem("Script List", Icons.book, () {
+              Navigator.of(context).pushN
