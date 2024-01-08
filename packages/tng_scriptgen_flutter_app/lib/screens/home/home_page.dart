@@ -27,4 +27,12 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-    
+    );
+  }
+
+  Card makeDashboardItem(String title, IconData icon, Function onTap) {
+    return Card(
+        elevation: 1.0,
+        margin: new EdgeInsets.all(8.0),
+        child: Container(
+         
