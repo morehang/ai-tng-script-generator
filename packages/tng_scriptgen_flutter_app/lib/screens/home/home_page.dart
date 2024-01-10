@@ -35,4 +35,8 @@ class HomePage extends StatelessWidget {
         elevation: 1.0,
         margin: new EdgeInsets.all(8.0),
         child: Container(
-         
+          decoration: BoxDecoration(color: Color.fromRGBO(220, 220, 220, 1.0)),
+          child: new InkWell(
+            onTap: onTap,
+            child: Column(
+              crossAxisAlignment: CrossAxisA
