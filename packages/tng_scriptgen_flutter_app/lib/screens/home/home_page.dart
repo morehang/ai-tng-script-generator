@@ -39,4 +39,9 @@ class HomePage extends StatelessWidget {
           child: new InkWell(
             onTap: onTap,
             child: Column(
-              crossAxisAlignment: CrossAxisA
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisSize: MainAxisSize.min,
+              verticalDirection: VerticalDirection.down,
+              children: <Widget>[
+                SizedBox(height: 50.0),
+   
