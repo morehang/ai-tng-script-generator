@@ -56,4 +56,21 @@ class HomePage extends StatelessWidget {
                       style:
                       new TextStyle(fontSize: 18.0, color: Colors.black)),
                 )
-           
+              ],
+            ),
+          ),
+        ));
+  }
+
+}
+
+
+
+
+/*
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+   
