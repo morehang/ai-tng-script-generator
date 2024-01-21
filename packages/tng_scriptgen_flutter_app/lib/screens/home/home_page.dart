@@ -73,4 +73,7 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
-   
+                "Home Page\nClick on below icon to goto About Page",
+                // Setting the style for the Text
+                style: TextStyle(fontSize: 20.0,),
+         
