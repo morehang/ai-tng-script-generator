@@ -50,4 +50,10 @@ class HomePage extends StatelessWidget {
                       size: 40.0,
                       color: Colors.black,
                     )),
-                SizedBox(heigh
+                SizedBox(height: 20.0),
+                new Center(
+                  child: new Text(title,
+                      style:
+                      new TextStyle(fontSize: 18.0, color: Colors.black)),
+                )
+           
