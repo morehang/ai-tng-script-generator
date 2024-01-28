@@ -82,4 +82,14 @@ class HomePage extends StatelessWidget {
                 icon: Icon(
                   Icons.info,
                   color: Colors.blue,
-   
+                ),
+                onPressed: () async {
+
+                },
+                iconSize: 80.0,
+              )
+            ],
+          ),
+        ),
+
+         */
