@@ -1,2 +1,10 @@
 {
-  "asset": "asset:tng_scriptgen_fl
+  "asset": "asset:tng_scriptgen_flutter_app/lib/screens/home/home_page.dart",
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": [
+      {
+        "name": "HomePage",
+        "constructor": {
+        
