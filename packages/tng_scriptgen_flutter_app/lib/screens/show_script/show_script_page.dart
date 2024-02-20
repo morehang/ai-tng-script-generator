@@ -10,4 +10,15 @@ class ShowScriptPage extends StatefulWidget {
   ShowScriptPage(this._scriptRepository);
 
   @override
-  ShowScriptPageState createState() => ShowScriptPageState(this._scriptReposit
+  ShowScriptPageState createState() => ShowScriptPageState(this._scriptRepository);
+
+}
+
+
+class ShowScriptPageState extends State<ShowScriptPage> {
+
+  String _scriptText = '';
+  String _scriptTitle = "";
+  ScriptRepository _scriptRepository;
+
+  ShowScriptPageState(this._scriptRepository);
