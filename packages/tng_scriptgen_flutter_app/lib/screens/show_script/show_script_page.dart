@@ -32,4 +32,10 @@ class ShowScriptPageState extends State<ShowScriptPage> {
       ),
       body: SingleChildScrollView(
         child: Center(
-     
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                _scriptText,
+                // Setting the style for the Text
+                st
