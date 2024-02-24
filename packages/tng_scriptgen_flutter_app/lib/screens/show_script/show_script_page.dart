@@ -22,3 +22,14 @@ class ShowScriptPageState extends State<ShowScriptPage> {
   ScriptRepository _scriptRepository;
 
   ShowScriptPageState(this._scriptRepository);
+
+  @override
+  Widget build(BuildContext context) {
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(this._scriptTitle),
+      ),
+      body: SingleChildScrollView(
+        child: Center(
+     
