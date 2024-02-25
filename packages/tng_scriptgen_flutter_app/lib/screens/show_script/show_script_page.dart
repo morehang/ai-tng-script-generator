@@ -52,4 +52,10 @@ class ShowScriptPageState extends State<ShowScriptPage> {
   @override
   initState() {
     super.initState();
-  
+    myAsyncInit();
+  }
+
+  myAsyncInit() async {
+    new Future.delayed(Duration.zero,() async {
+      final originalId = ModalRoute.of(context).settings.arguments;
+      final script = await this._script
