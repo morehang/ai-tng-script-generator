@@ -58,4 +58,12 @@ class ShowScriptPageState extends State<ShowScriptPage> {
   myAsyncInit() async {
     new Future.delayed(Duration.zero,() async {
       final originalId = ModalRoute.of(context).settings.arguments;
-      final script = await this._script
+      final script = await this._scriptRepository.findOneByOriginalId(originalId);
+      this.setState(() {
+        _scriptTitle = script['title'];
+        _scriptText = script['scriptText'];
+      });
+    });
+  }
+
+}
