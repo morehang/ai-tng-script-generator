@@ -38,4 +38,18 @@ class ShowScriptPageState extends State<ShowScriptPage> {
               Text(
                 _scriptText,
                 // Setting the style for the Text
-                st
+                style: TextStyle(fontSize: 20.0,),
+                textAlign: TextAlign.center,
+              ),
+
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  @override
+  initState() {
+    super.initState();
+  
