@@ -11,4 +11,11 @@
           "kind": "constructor",
           "injectedType": {
             "lookupKey": {
-              "root": "asset:tng_scriptgen_flutter_app/lib/screens/show_scri
+              "root": "asset:tng_scriptgen_flutter_app/lib/screens/show_script/show_script_page.dart#ShowScriptPage",
+              "qualifier": null
+            },
+            "isProvider": false
+          },
+          "singleton": false,
+          "asynchronous": false,
+      
