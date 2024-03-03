@@ -1,0 +1,6 @@
+{
+  "asset": "asset:tng_scriptgen_flutter_app/lib/services/script_repository.dart",
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": [

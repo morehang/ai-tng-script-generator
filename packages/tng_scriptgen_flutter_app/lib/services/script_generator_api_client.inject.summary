@@ -19,3 +19,9 @@
           },
           "singleton": true,
           "asynchronous": false,
+          "dependencies": []
+        }
+      }
+    ]
+  }
+}
