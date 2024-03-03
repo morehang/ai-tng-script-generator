@@ -4,3 +4,11 @@
     "injector": [],
     "module": [],
     "injectable": [
+      {
+        "name": "ScriptRepository",
+        "constructor": {
+          "name": "",
+          "kind": "constructor",
+          "injectedType": {
+            "lookupKey": {
+              "root"
