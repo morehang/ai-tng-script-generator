@@ -17,4 +17,10 @@
             "isProvider": false
           },
           "singleton": true,
-          "
+          "asynchronous": false,
+          "dependencies": []
+        }
+      }
+    ]
+  }
+}
