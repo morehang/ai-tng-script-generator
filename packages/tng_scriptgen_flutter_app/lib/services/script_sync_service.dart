@@ -9,4 +9,10 @@ class ScriptSyncService {
   final ScriptRepository _repository;
   final ScriptGeneratorApiClient _scriptGeneratorApiClient;
 
-  
+  ScriptSyncService(this._repository, this._scriptGeneratorApiClient);
+
+  sync() async {
+    await _repository.initialize();
+    await _repository.clear();
+
+    final remoteScripts = await _scriptGenera
