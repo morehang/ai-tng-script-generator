@@ -15,4 +15,10 @@ class ScriptSyncService {
     await _repository.initialize();
     await _repository.clear();
 
-    final remoteScripts = await _scriptGenera
+    final remoteScripts = await _scriptGeneratorApiClient.getScriptsByMe();
+    for (var script in remoteScripts) {
+      script['originalId'] = script['_id'];
+      script['_id'] = null;
+      await _repository.save(script);
+    }
+    var found = awa
