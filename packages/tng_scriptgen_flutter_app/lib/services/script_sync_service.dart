@@ -21,4 +21,8 @@ class ScriptSyncService {
       script['_id'] = null;
       await _repository.save(script);
     }
-    var found = awa
+    var found = await _repository.findAll();
+    found = found;
+  }
+
+}
