@@ -8,4 +8,6 @@ We are proud to note that this project was featured in a Machine Learning App Ex
 
 ## MVP Use Case
 
-The MVP intends to serve as a tool supplying AI-generated transcripts of brand new episodes of 'Star Trek: The Next Generation'.
+The MVP intends to serve as a tool supplying AI-generated transcripts of brand new episodes of 'Star Trek: The Next Generation'. It can be utilized by creative writers in the industry to generate prompts for writing. A demo video showcasing the functionality is available on YouTube.
+
+The user interaction incl
