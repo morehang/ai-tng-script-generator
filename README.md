@@ -10,4 +10,8 @@ We are proud to note that this project was featured in a Machine Learning App Ex
 
 The MVP intends to serve as a tool supplying AI-generated transcripts of brand new episodes of 'Star Trek: The Next Generation'. It can be utilized by creative writers in the industry to generate prompts for writing. A demo video showcasing the functionality is available on YouTube.
 
-The user interaction includes user login via Google OAuth, ordering of a new AI-generated transcript, entering payment details, and subsequently getting access to the generated script. However, the MVP version has certain
+The user interaction includes user login via Google OAuth, ordering of a new AI-generated transcript, entering payment details, and subsequently getting access to the generated script. However, the MVP version has certain limitations such as simplistic user management, simple UI/UX, lack of persistence of generated scripts, etc. More details on these can be found in the readme.
+
+## Future Developments
+
+Fut
