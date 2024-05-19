@@ -14,4 +14,8 @@ The user interaction includes user login via Google OAuth, ordering of a new AI-
 
 ## Future Developments
 
-Fut
+Future adaptations could include advanced user management options, enhanced UI/UX, support for persistence of generated scripts, and scalability options.
+
+## Realization Steps and Building the Project
+
+The 
