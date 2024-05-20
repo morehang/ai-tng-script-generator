@@ -18,4 +18,4 @@ Future adaptations could include advanced user management options, enhanced UI/U
 
 ## Realization Steps and Building the Project
 
-The 
+The steps to realize the project, model training, implementations of backend and frontend, are mentioned in the project readme. The build steps require installation of Node modules and Python packages, adjustment of system conf
